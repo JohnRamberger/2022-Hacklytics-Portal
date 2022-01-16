@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Hacklytics 2022</title>
     <meta charset="UTF-8">
@@ -7,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/hacklytics/apple-touch-icon.png">
-    <link rel="icon" type="image/x-icon" href="assets/images/hacklytics/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="assets/images/hacklytics/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/hacklytics/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/hacklytics/favicon-16x16.png">
     <link rel="manifest" href="assets/site.webmanifest">
@@ -19,13 +20,37 @@
 </head>
 
 <body onload="mobileCheck()">
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDrhTk27cBL-I89jPp-eB68Uo_A51XD3SU",
+            authDomain: "hackalytics-test.firebaseapp.com",
+            projectId: "hackalytics-test",
+            storageBucket: "hackalytics-test.appspot.com",
+            messagingSenderId: "178742460404",
+            appId: "1:178742460404:web:897b4d7e968c82041403a1",
+            measurementId: "G-NCPF5JWVG1"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
     <script src="assets/scripts/mobile.js">
     </script>
-<!--     <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=black" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-black.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a> -->
+    <!--     <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=black" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-black.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a> -->
     <div class="topnav" id="myTopnav">
-        <a href="" class="logo"><img class="navb" src="assets/images/hacklytics/mini-icon.png" width="62" height="54"></a>
+        <a href="" class="logo"><img class="navb" src="assets/images/hacklytics/mini-icon.png" width="62"
+                height="54"></a>
         <a href="#About" class="text">About</a>
-        <a href="participant.html" class = "text">Live Event!</a>
+        <a href="participant.html" class="text">Live Event!</a>
         <a href="#Sponsors" class="text">Sponsors</a>
         <a href="#FAQ" class="text">FAQ</a>
         <!-- <a href="#Get in Touch!" class="text">Get in Touch</a> -->
@@ -33,37 +58,39 @@
             <i class="fa fa-bars"></i>
         </a>
     </div>
-    
+
     <div id="desktopDIV">
-      <div id="wrap" class="form-group">
-        <div class="fade-in">
-            <img class="desktop" src="assets/images/hacklytics/square-logo.png">   
-            <h1 class= heading>Hacklytics <em>2022</em></h1>
-            <h1>Connecting Communities</h1>
-            <br>
-            <h3>February 18th - 20th, 2022</h3>
-            <br>
-            <a href="https://hacklytics2021.devpost.com/" target="_blank" class="button">Go to last year's Devpost!</a>
+        <div id="wrap" class="form-group">
+            <div class="fade-in">
+                <img class="desktop" src="assets/images/hacklytics/square-logo.png">
+                <h1 class=heading>Hacklytics <em>2022</em></h1>
+                <h1>Connecting Communities</h1>
+                <br>
+                <h3>February 18th - 20th, 2022</h3>
+                <br>
+                <a href="https://hacklytics2021.devpost.com/" target="_blank" class="button">Go to last year's
+                    Devpost!</a>
+            </div>
+            <p></p>
         </div>
-        <p></p>
-      </div>
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="assets/scripts/script.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+        <script src="assets/scripts/script.js"></script>
     </div>
 
     <div class="mobile" id="mobileDIV">
-      <div class="vertical-center">
-        <img class="mobile" src="assets/images/hacklytics/newplaceholder-removebg.png">
-        <h1 class= "heading">Hacklytics <em>2022</em></h1>
-        <br>
-        <h1>Connecting Communities</h1>
-        <br>
-        <h3>February 18-20</h3>
-        <br>
-        <br>
-        <a href="https://hacklytics2021.devpost.com/" target="_blank" class="button">Go to Devpost!</a>
-      </div>
+        <div class="vertical-center">
+            <img class="mobile" src="assets/images/hacklytics/newplaceholder-removebg.png">
+            <h1 class="heading">Hacklytics <em>2022</em></h1>
+            <br>
+            <h1>Connecting Communities</h1>
+            <br>
+            <h3>February 18-20</h3>
+            <br>
+            <br>
+            <a href="https://hacklytics2021.devpost.com/" target="_blank" class="button">Go to Devpost!</a>
+        </div>
     </div>
-    
+
     <div id="About" class="container" style="position: relative;">
         <div class="bgimg-1">
         </div>
@@ -72,12 +99,16 @@
         </div>
     </div>
     <div class="section3" id="corner">
-<!--         <img src=assets/images/hacklytics/ball-two.png class="aOne">
+        <!--         <img src=assets/images/hacklytics/ball-two.png class="aOne">
         <img src=assets/images/hacklytics/ball-two.png class="aTwo"> -->
         <p>
-            Hacklytics is Georgia Tech’s 36 hour datathon brought to you by Data Science at Georgia Tech, Georgia Tech's largest community of student data scientists! Our goal is to give students an opportunity to get hands-on experience with data science, collaborating on projects that make a real impact.</br></br>
-            As the world is becoming increasingly dependent on data, our theme for Hacklytics 2022 is "Connecting Communities". 
-            We look forward to seeing innovative projects inspired by using data as building blocks for a better world.</br></br>
+            Hacklytics is Georgia Tech’s 36 hour datathon brought to you by Data Science at Georgia Tech, Georgia Tech's
+            largest community of student data scientists! Our goal is to give students an opportunity to get hands-on
+            experience with data science, collaborating on projects that make a real impact.</br></br>
+            As the world is becoming increasingly dependent on data, our theme for Hacklytics 2022 is "Connecting
+            Communities".
+            We look forward to seeing innovative projects inspired by using data as building blocks for a better
+            world.</br></br>
             Hacklytics 2022 will be held in a hybrid format from February 18 - 20th, 2022.
         </p>
     </div>
@@ -91,7 +122,7 @@
 
     <div class="section1" id="corner">
         <!-- <h1>Sponsors</h1> -->
-<!--         <img src=assets/images/hacklytics/bottomrightblocks.png class="aThree">
+        <!--         <img src=assets/images/hacklytics/bottomrightblocks.png class="aThree">
         <img src=assets/images/hacklytics/bottomleftblocks.png class="aFour"> -->
         <!-- 
             <p>Please see the
@@ -100,9 +131,10 @@
         -->
         <div class="sponsor-list" id="desktopSponsors">
             <div id="tiers">
-                <a href="https://www.ironmountain.com/" target="_blank"><img class="sponsor1" src="assets/images/sponsors/ironmountain.png"></a>
+                <a href="https://www.ironmountain.com/" target="_blank"><img class="sponsor1"
+                        src="assets/images/sponsors/ironmountain.png"></a>
             </div>
-<!--        <div id="tiers">
+            <!--        <div id="tiers">
                 <div class="sponsor-head"><h1 style="color: #B3A369; font-size: 3.5em;">Gold</h1></div>
                 <a href="https://www.antheminc.com/index.htm" target="_blank"><img class="sponsor1" src="assets/images/sponsors/anthem.png"></a>
                 <a href="https://www.emerson.com/en-us" target="_blank"><img class="sponsor1" src="assets/images/sponsors/emersonlogo.png"></a>
@@ -135,84 +167,92 @@
                 <a href="https://www.gtsf.gatech.edu/" target="_blank"><img class="sponsor3" src="assets/images/sponsors/GTSFLogoBlack.png"></a>
             </div>
         </div> -->
-    </div>
-
-    <div id="FAQ" class="container" style="position:relative">
-        <div class="bgimg-4"></div>
-        <div class="caption">
-            <span class="border1">FAQ</span>
         </div>
-    </div>
-    <div class="section2" id="corner">
-        <!--<h1>FAQ</h1> -->
-<!--         <img src=assets/images/hacklytics/blocksrecol2.png class="aTwo">
+
+        <div id="FAQ" class="container" style="position:relative">
+            <div class="bgimg-4"></div>
+            <div class="caption">
+                <span class="border1">FAQ</span>
+            </div>
+        </div>
+        <div class="section2" id="corner">
+            <!--<h1>FAQ</h1> -->
+            <!--         <img src=assets/images/hacklytics/blocksrecol2.png class="aTwo">
         <img src=assets/images/hacklytics/blocksrecol.png class="aOne"> -->
-        <button class="accordion">What is a datathon?
-             
-        </button>
-        <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6;">
-            <p class='for-pan'><br>A datathon is a specific type of hackathon that focuses on data science. 
-                You can choose any datasets, programming languages, APIs, algorithms you'd like, to create visualizations, develop models, derive insights, and do anything you believe to be impactful! The sky's the limit!</p>
-        </div>
-        <button class="accordion">When and where is it?  </button>
-        <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
-            <p class='for-pan'><br>February 5th-7th, held fully online!</p>
-        </div>
-        <button class="accordion">Who can I form a team with and with how many people? </button>
-        <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
-            <p class='for-pan'><br>You can form a team with up to 4 people and with any admitted participants!</p>
-        </div>
-        <button class="accordion">What if I don't have a team? </button>
-        <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
-            <p class='for-pan'><br>Lots of people come in without teams! You can find people to form a team with during our team-building event or through our Discord.</p>
-        </div>
-        <button class="accordion">How much will I have to spend? </button>
-        <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
-            <p class='for-pan'><br>Nothing! The event is free for attendees.</p>
-        </div>
-        <button class="accordion">Who can apply?  </button>
-        <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
-            <p class='for-pan'><br>Anyone who is 18 years old or older with computer access can apply.</p>
-        </div>
-        <button class="accordion">Is this event beginner-friendly?  </button>
-        <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
-            <p class='for-pan'><br>Yes, we encourage beginners to apply to expand their knowledge! We will have tons of experienced mentors at the event who are able to help out with projects.</p>
-        </div>
-        <button class="accordion">How are applicants selected?  </button>
-        <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
-            <p class='for-pan'><br>We evaluate your applications by looking into your interest in participating and passion in the field of data!</p>
-        </div>
-        <button class="accordion">What, other than coding, is going to happen during this event?  </button>
-        <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
-            <p class='for-pan'><br>We will be have guest speakers, sponsor talks, workshops, and social events!</p>
-        </div>
-        <button class="accordion">How do I get in touch?  </button>
-        <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
-            <p class='for-pan'><br>Reach out to us via email at <a href="mailto:hello@hacklytics.io/">hello@hacklytics.io!</a></p>
-        </div>
-        <button class="accordion">Is there a Code of Conduct?   </button>
-        <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
-            <p class='for-pan'><br>All hackers must adhere to the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH code of conduct.</a></p>
-        </div>
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-            for (i = 0; i < acc.length; i++) {
-              acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                  panel.style.maxHeight = null;
-                } else {
-                  panel.style.maxHeight = panel.scrollHeight + "px";
+            <button class="accordion">What is a datathon?
 
+            </button>
+            <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6;">
+                <p class='for-pan'><br>A datathon is a specific type of hackathon that focuses on data science.
+                    You can choose any datasets, programming languages, APIs, algorithms you'd like, to create
+                    visualizations, develop models, derive insights, and do anything you believe to be impactful! The
+                    sky's the limit!</p>
+            </div>
+            <button class="accordion">When and where is it? </button>
+            <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
+                <p class='for-pan'><br>February 5th-7th, held fully online!</p>
+            </div>
+            <button class="accordion">Who can I form a team with and with how many people? </button>
+            <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
+                <p class='for-pan'><br>You can form a team with up to 4 people and with any admitted participants!</p>
+            </div>
+            <button class="accordion">What if I don't have a team? </button>
+            <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
+                <p class='for-pan'><br>Lots of people come in without teams! You can find people to form a team with
+                    during our team-building event or through our Discord.</p>
+            </div>
+            <button class="accordion">How much will I have to spend? </button>
+            <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
+                <p class='for-pan'><br>Nothing! The event is free for attendees.</p>
+            </div>
+            <button class="accordion">Who can apply? </button>
+            <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
+                <p class='for-pan'><br>Anyone who is 18 years old or older with computer access can apply.</p>
+            </div>
+            <button class="accordion">Is this event beginner-friendly? </button>
+            <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
+                <p class='for-pan'><br>Yes, we encourage beginners to apply to expand their knowledge! We will have tons
+                    of experienced mentors at the event who are able to help out with projects.</p>
+            </div>
+            <button class="accordion">How are applicants selected? </button>
+            <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
+                <p class='for-pan'><br>We evaluate your applications by looking into your interest in participating and
+                    passion in the field of data!</p>
+            </div>
+            <button class="accordion">What, other than coding, is going to happen during this event? </button>
+            <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
+                <p class='for-pan'><br>We will be have guest speakers, sponsor talks, workshops, and social events!</p>
+            </div>
+            <button class="accordion">How do I get in touch? </button>
+            <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
+                <p class='for-pan'><br>Reach out to us via email at <a
+                        href="mailto:hello@hacklytics.io/">hello@hacklytics.io!</a></p>
+            </div>
+            <button class="accordion">Is there a Code of Conduct? </button>
+            <div class="panel" style="border-left: 1px solid #1C66A6; border-right: 1px solid #1C66A6">
+                <p class='for-pan'><br>All hackers must adhere to the <a
+                        href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH code of
+                        conduct.</a></p>
+            </div>
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight) {
+                            panel.style.maxHeight = null;
+                        } else {
+                            panel.style.maxHeight = panel.scrollHeight + "px";
+
+                        }
+                    });
                 }
-              });
-            }
-        </script>
-    </div>
+            </script>
+        </div>
 
-    <!--
+        <!--
     <div id="Get in Touch!" class="container" style="position: relative;">
         <div class="bgimg-5"></div>
         <div class="caption">
@@ -220,7 +260,7 @@
         </div>
     </div>
     -->
-    <!--
+        <!--
         <div class="section3" id="corner">
         <img src=assets/images/hacklytics/topleftblocks.png class="aFour">
         <img src=assets/images/hacklytics/bottomrightblocks.png class="aThree">
@@ -231,16 +271,17 @@
         </div>
     </div>
     -->
-    <div id="Footer" class="footer">
-        <h2>Connect with Us</h2>
-        <ul class="icons">
-            <li><a  href="https://www.linkedin.com/company/dsgt/" class="fab fa-linkedin" target="_blank"></a></li>
-            <li><a  href="https://www.facebook.com/datasciencegt/" class="fab fa-facebook" target="_blank"></a></li>
-            <li><a  href="https://datasciencegt.org/" class="fas fa-globe" target="_blank"></a></li>
-            <li><a  href="mailto:hello@hacklytics.io" class="fas fa-envelope" target="_blank"></a></li>
-        </ul>
-        <ul class="copyright">
-            <li>&copy; <a href="https://datasciencegt.org/">Data Science at Georgia Tech 2020.</a> All rights reserved.</li>
-        </ul>
-    </div>
-  </body>
+        <div id="Footer" class="footer">
+            <h2>Connect with Us</h2>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/company/dsgt/" class="fab fa-linkedin" target="_blank"></a></li>
+                <li><a href="https://www.facebook.com/datasciencegt/" class="fab fa-facebook" target="_blank"></a></li>
+                <li><a href="https://datasciencegt.org/" class="fas fa-globe" target="_blank"></a></li>
+                <li><a href="mailto:hello@hacklytics.io" class="fas fa-envelope" target="_blank"></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; <a href="https://datasciencegt.org/">Data Science at Georgia Tech 2020.</a> All rights
+                    reserved.</li>
+            </ul>
+        </div>
+</body>
